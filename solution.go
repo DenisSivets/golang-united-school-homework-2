@@ -6,8 +6,8 @@ type sides int
 
 const (
 	SidesTriangle sides = 3
-	SidesSquar    sides = 4
-	SidesCircl    sides = 0
+	SidesSquare    sides = 4
+	SidesCircle    sides = 0
 )
 
 func CalcSquare(sideLen float64, sidesNum sides) float64 {
@@ -15,10 +15,10 @@ func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	if sidesNum == SidesTriangle {
 		square = math.Sqrt(3) * sideLen * sideLen / 4
 	}
-	if sidesNum == SidesSquar {
+	if sidesNum == SidesSquare {
 		square = sideLen * sideLen
 	}
-	if sidesNum == SidesCircl {
+	if sidesNum == SidesCircle {
 		square = math.Pi * sideLen * sideLen
 	}
 	return square
